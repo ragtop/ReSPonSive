@@ -21,5 +21,9 @@ $lighter-theme-color: lighten($theme-color, 15%);   /* automatically adjusts bas
 $darker-theme-color: darken($theme-color, 8%);      /* automatically adjusts based on the main color */
 $mobile-container-width: $container-width + 10%;    /* the width that the mobile page should be */
 
+/* screen sizes for adjusting - DON'T CHANGE */
+$mobile: 800px;
+$tablet: 1000px;
+
 /* images */
 $header-picture: "../images/header-bg.jpg";     /* the image displayed at the top of the page */

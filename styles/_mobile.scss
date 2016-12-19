@@ -6,7 +6,7 @@
 */
 @import "configs";
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: $mobile) {
 
     .container {
         width: $mobile-container-width;
