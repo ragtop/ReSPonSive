@@ -219,6 +219,49 @@ main {
     display: block;
     text-align: center;
     width: 100%; }
+  main #left_content {
+    float: left;
+    width: 160px; }
+    main #left_content ul.hiscore_links {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      main #left_content ul.hiscore_links li {
+        display: block; }
+        main #left_content ul.hiscore_links li a:link,
+        main #left_content ul.hiscore_links li a:active,
+        main #left_content ul.hiscore_links li a:visited {
+          color: #ff6559;
+          text-decoration: none; }
+        main #left_content ul.hiscore_links li a:hover {
+          color: #ff3f30;
+          text-decoration: underline; }
+  main #right_content {
+    float: left;
+    width: calc(100% - 160px); }
+    main #right_content table.hiscores {
+      background: black;
+      width: 100%;
+      border-collapse: collapse; }
+      main #right_content table.hiscores thead {
+        font-weight: bold;
+        background: rgba(255, 255, 255, 0.05); }
+      main #right_content table.hiscores tr:nth-child(even) {
+        background: rgba(255, 255, 255, 0.05); }
+      main #right_content table.hiscores tr td:nth-child(4) {
+        /* aligns XP to the right */
+        text-align: right; }
+      main #right_content table.hiscores tr td {
+        text-align: left;
+        padding: 4px; }
+      main #right_content table.hiscores a:link,
+      main #right_content table.hiscores a:active,
+      main #right_content table.hiscores a:visited {
+        color: #ff6559;
+        text-decoration: none; }
+      main #right_content table.hiscores a:hover {
+        color: #ff3f30;
+        text-decoration: underline; }
 
 footer {
   float: left;
