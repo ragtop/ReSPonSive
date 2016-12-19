@@ -190,11 +190,10 @@ nav {
 main {
     float: left;
     width: 100%;
-    margin-top: 80px;
 
     #main_wrapper {
         @extend .container;
-        margin: auto;
+        margin: 80px auto;
         background: rgba(0, 0, 0, .9);
         overflow: auto;
     }
