@@ -10,11 +10,11 @@
 
 main {
 
-    #left_content {
+    #left_content.hiscores {
         float: left;
         width: 160px;
 
-        ul.hiscore_links {
+        ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -37,11 +37,11 @@ main {
         }
     }
 
-    #right_content {
+    #right_content.hiscores {
         float: left;
         width: calc(100% - 160px);
 
-        table.hiscores {
+        table {
             background: black;
             width: 100%;
             border-collapse: collapse;
@@ -85,7 +85,7 @@ main {
 
     main {
 
-        #left_content {
+        #left_content.hiscores {
             float: left;
             width: 100%;
             text-align: center;
@@ -96,7 +96,7 @@ main {
                 margin: 15px 0;
             }
 
-            ul.hiscore_links {
+            ul {
 
                 li {
                     display: inline-block;
@@ -105,7 +105,7 @@ main {
             }
         }
 
-        #right_content {
+        #right_content.hiscores {
             float: left;
             width: 100%;
         }
