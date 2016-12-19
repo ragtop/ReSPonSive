@@ -27,15 +27,26 @@
 *   Author: Marcello Sabino
 *   Date:   18 December 2016
 */
+/*
+    This is where all variables should be declared.
+    Order should be maintained.
+
+    Author: Marcello Sabino
+    Date:   December 19, 2016
+*/
+/* core theme variables */
 /* background color of the website */
 /* the main theme color */
 /* the width everything should be centered at */
+/* font attributes */
 /* easily change the font theme here */
 /* font-color for the entire site */
 /* font-color on the navigation section */
 /* font-color when you hover over a navigation link */
+/* automatically adjustable (don't touch) */
 /* automatically adjusts based on the main color */
 /* automatically adjusts based on the main color */
+/* images */
 /* the image displayed at the top of the page */
 body {
   font: 0.8em verdana, sans-serif;
@@ -276,9 +287,21 @@ footer {
     footer #footer_wrapper a:hover {
       color: #ff3f30; }
 
+/**
+    Allows for tablet resizing; any page that wants to be responsive in mobile view should import this partial.
+
+    Author: Marcello Sabino
+    Date:   19 December 2016
+*/
 @media screen and (max-width: 1000px) {
   header {
     background-size: 100% 50%; } }
+/**
+    Allows for mobile resizing; any page that wants to be responsive in mobile view should import this partial.
+
+    Author: Marcello Sabino
+    Date:   19 December 2016
+*/
 @media screen and (max-width: 800px) {
   .container, header #top_navigation_wrapper, header #header_content, main #main_wrapper, footer #footer_wrapper {
     width: 90%; }
