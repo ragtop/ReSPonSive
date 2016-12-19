@@ -1,0 +1,29 @@
+/*
+    This is where all variables should be declared.
+    Order should be maintained.
+
+    Author: Marcello Sabino
+    Date:   December 19, 2016
+*/
+/* core theme variables */
+$background-color: #222;    /* background color of the website */
+$theme-color: #ff6559;      /* the main theme color */
+$container-width: 80%;      /* the width everything should be centered at */
+
+/* font attributes */
+$font: .8em verdana, sans-serif;    /* easily change the font theme here */
+$font-color: #cbcbcb;               /* font-color for the entire site */
+$nav-color: rgba(255, 255, 255, 0.8);       /* font-color on the navigation section */
+$darker-nav-color: rgba(255, 255, 255, .9); /* font-color when you hover over a navigation link */
+
+/* automatically adjustable (don't touch) */
+$lighter-theme-color: lighten($theme-color, 15%);   /* automatically adjusts based on the main color */
+$darker-theme-color: darken($theme-color, 8%);      /* automatically adjusts based on the main color */
+$mobile-container-width: $container-width + 10%;    /* the width that the mobile page should be */
+
+/* screen sizes for adjusting - DON'T CHANGE */
+$mobile: 800px;
+$tablet: 1000px;
+
+/* images */
+$header-picture: "../images/header-bg.jpg";     /* the image displayed at the top of the page */

@@ -1,16 +1,4 @@
-$background-color: #222;    /* background color of the website */
-$theme-color: #ff6559;      /* the main theme color */
-$container-width: 80%;      /* the width everything should be centered at */
-
-$font: .8em verdana, sans-serif;    /* easily change the font theme here */
-$font-color: #cbcbcb;               /* font-color for the entire site */
-$nav-color: rgba(255, 255, 255, 0.8);       /* font-color on the navigation section */
-$darker-nav-color: rgba(255, 255, 255, .9); /* font-color when you hover over a navigation link */
-
-$lighter-theme-color: lighten($theme-color, 15%);   /* automatically adjusts based on the main color */
-$darker-theme-color: darken($theme-color, 8%);      /* automatically adjusts based on the main color */
-
-$header-picture: "../images/header-bg.jpg";     /* the image displayed at the top of the page */
+@import "configs";
 
 body {
     font: $font;
@@ -263,76 +251,6 @@ main {
         display: block;
         text-align: center;
         width: 100%;
-    }
-
-    #left_content {
-        float: left;
-        width: 160px;
-
-        ul.hiscore_links {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-
-            li {
-                display: block;
-
-                a:link,
-                a:active,
-                a:visited {
-                    color: $theme-color;
-                    text-decoration: none;
-                }
-
-                a:hover {
-                    color: $darker-theme-color;
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-
-    #right_content {
-        float: left;
-        width: calc(100% - 160px);
-
-        table.hiscores {
-            background: black;
-            width: 100%;
-            border-collapse: collapse;
-
-            thead {
-                font-weight: bold;
-                background: rgba(255, 255, 255, .05);
-            }
-
-            tr:nth-child(even) {
-                background: rgba(255, 255, 255, .05);
-            }
-
-            tr {
-                td:nth-child(4) { /* aligns XP to the right */
-                    text-align: right;
-                }
-
-                td {
-                    text-align: left;
-                    padding: 4px;
-                }
-            }
-
-            a:link,
-            a:active,
-            a:visited {
-                color: $theme-color;
-                text-decoration: none;
-            }
-
-            a:hover {
-                color: $darker-theme-color;
-                text-decoration: underline;
-            }
-        }
     }
 }
 

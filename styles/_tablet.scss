@@ -1,0 +1,14 @@
+/**
+    Allows for tablet resizing; any page that wants to be responsive in mobile view should import this partial.
+
+    Author: Marcello Sabino
+    Date:   19 December 2016
+*/
+@import "configs";
+
+@media screen and (max-width: $tablet) {
+
+    header {
+        background-size: 100% 50%;
+    }
+}

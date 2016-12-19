@@ -1,11 +1,15 @@
-@import "tablet";
+/**
+    Allows for mobile resizing; any page that wants to be responsive in mobile view should import this partial.
 
-$container-width: 90%;
+    Author: Marcello Sabino
+    Date:   19 December 2016
+*/
+@import "configs";
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: $mobile) {
 
     .container {
-        width: $container-width;
+        width: $mobile-container-width;
     }
 
     .mobile {
@@ -127,34 +131,6 @@ $container-width: 90%;
                     }
                 }
             }
-        }
-    }
-
-    main {
-
-        #left_content {
-            float: left;
-            width: 100%;
-            text-align: center;
-
-            h4 {
-                font-size: 2em;
-                text-align: center;
-                margin: 15px 0;
-            }
-
-            ul.hiscore_links {
-
-                li {
-                    display: inline-block;
-                    margin: 4px 4px;
-                }
-            }
-        }
-
-        #right_content {
-            float: left;
-            width: 100%;
         }
     }
 }

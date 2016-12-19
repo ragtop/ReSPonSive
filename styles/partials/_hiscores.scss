@@ -1,0 +1,113 @@
+/**
+    Styling for the hiscore page;
+    everything that has to do with the hiscore styling should go here.
+
+    Author: Marcello Sabino
+    Date:   December 19, 2016
+*/
+
+@import "../configs";
+
+main {
+
+    #left_content.hiscores {
+        float: left;
+        width: 160px;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: block;
+
+                a:link,
+                a:active,
+                a:visited {
+                    color: $theme-color;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    color: $darker-theme-color;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    #right_content.hiscores {
+        float: left;
+        width: calc(100% - 160px);
+
+        table {
+            background: black;
+            width: 100%;
+            border-collapse: collapse;
+
+            thead {
+                font-weight: bold;
+                background: rgba(255, 255, 255, .05);
+            }
+
+            tr:nth-child(even) {
+                background: rgba(255, 255, 255, .05);
+            }
+
+            tr {
+                td:nth-child(4) { /* aligns XP to the right */
+                    text-align: right;
+                }
+
+                td {
+                    text-align: left;
+                    padding: 4px;
+                }
+            }
+
+            a:link,
+            a:active,
+            a:visited {
+                color: $theme-color;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: $darker-theme-color;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+
+    main {
+
+        #left_content.hiscores {
+            float: left;
+            width: 100%;
+            text-align: center;
+
+            h4 {
+                font-size: 2em;
+                text-align: center;
+                margin: 15px 0;
+            }
+
+            ul {
+
+                li {
+                    display: inline-block;
+                    margin: 4px 4px;
+                }
+            }
+        }
+
+        #right_content.hiscores {
+            float: left;
+            width: 100%;
+        }
+    }
+}

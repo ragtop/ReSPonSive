@@ -12,7 +12,7 @@ It is not recommended to edit the .CSS files, this project utilizes .SCSS files.
 
 ##Customizing the Template for Your Needs
 ReSPonSive is very easy to customize to fit your needs. For basic visual changes, you'll only ever need to look at one file: 
-> desktop.scss
+> _configs.scss
 
 Once you open it at the top of the file you will see some variables that will need to be tweaked (if you so choose).
 
@@ -32,7 +32,7 @@ $darker-theme-color: darken($theme-color, 8%);      /* automatically adjusts bas
 $header-picture: "../images/header-bg.jpg";     /* the image displayed at the top of the page */
 ```
 
-Incase that documentation doesn't make sense, let's dive into this a little further.
+In case that documentation doesn't make sense, let's dive into this a little further.
 
 ##Core Variables
 The variables are in sets of groups, these groups are done on purpose to help find variables. Especially when more get added for further customization.  The first group of three (the following):
@@ -141,3 +141,21 @@ Render your server updating or in development:
     Status: <span class="updating">Updating</span>
 </div>
 ```
+
+#Partials and Plugins
+ReSPonSive is a great tool that allows you to easily make changes to your template.  With Partials and Plugins
+if you want to add styling to your page, for example a "Hiscores" page styling, adding the design to your page is simple.
+
+Go into the ```styles/partials``` or ```styles/plugins``` directory and start searching for styling that you wish to add
+to your site.
+
+To add the styling you would simply add the following import to your ```main.scss``` file.
+
+In this example we are adding the Hiscore styling to our website.
+```SCSS
+/* PARTIALS */
+@import "partials/hiscores";
+```
+
+It's that easy.  Then adding the Hiscore's styling to your website will be as easy as adding a class name
+to an HTML element.

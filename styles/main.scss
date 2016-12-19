@@ -27,4 +27,13 @@
 *   Author: Marcello Sabino
 *   Date:   18 December 2016
 */
+
+/* CORE STYLESHEETS */
+@import "desktop";
+@import "tablet";
 @import "mobile";
+
+/* PARTIALS */
+@import "partials/hiscores";
+
+/* PLUGINS */
