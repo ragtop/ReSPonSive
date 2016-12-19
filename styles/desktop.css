@@ -1,0 +1,199 @@
+/**
+*   Version: 1.0.0
+*   A responsive runescape private server website template.
+*
+*   This was originally posted on Rune-Server by Mr. March
+*
+*   Author: Mr. March
+*   Date:   18 December 2016
+*/
+/* background color of the website */
+/* the main theme color */
+/* the width everything should be centered at */
+/* easily change the font theme here */
+/* font-color for the entire site */
+/* automatically adjusts based on the main color */
+/* automatically adjusts based on the main color */
+body {
+  font: 0.8em verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  color: #cbcbcb; }
+
+.container, header #top_navigation_wrapper, header #header_content, main #main_wrapper, footer #footer_wrapper {
+  width: 80%;
+  max-width: 900px; }
+
+.mobile {
+  display: none; }
+
+header {
+  float: left;
+  width: 100%;
+  background-image: url("../images/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  min-height: 400px; }
+  header #top_tint {
+    float: left;
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid black;
+    width: 100%; }
+  header #top_navigation_wrapper {
+    width: 90%;
+    margin: auto;
+    height: 30px; }
+  header #top_left, header #top_right {
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  header #top_right {
+    float: right; }
+    header #top_right ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      header #top_right ul li {
+        display: inline-block; }
+        header #top_right ul li a:link,
+        header #top_right ul li a:active,
+        header #top_right ul li a:visited {
+          color: #ff6447;
+          text-decoration: underline; }
+        header #top_right ul li a:hover {
+          color: #ff421e; }
+  header #header_tint {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 363px;
+    /* compensate for the top */
+    background: rgba(0, 0, 0, 0.65); }
+  header #header_content {
+    margin: auto;
+    text-align: center;
+    color: #ececec; }
+    header #header_content h1 {
+      font-size: 3.4em;
+      margin-top: 80px;
+      color: #ff6447;
+      text-shadow: 2px 2px 15px #000;
+      margin-bottom: 13px; }
+    header #header_content #game_status {
+      display: table;
+      margin: 50px auto;
+      padding: 12px 25px;
+      border-radius: 80px;
+      background-color: rgba(0, 0, 0, 0.9);
+      color: #cbcbcb; }
+      header #header_content #game_status .online {
+        color: #4ec854; }
+      header #header_content #game_status .offline {
+        color: #ff5945; }
+      header #header_content #game_status .updating {
+        color: #ced921; }
+  header .bubble {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #ff6447;
+    opacity: .1; }
+
+nav {
+  float: left;
+  width: 100%;
+  min-height: 40px;
+  background: #ff6447;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  text-align: center; }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    nav ul li {
+      display: inline-block; }
+      nav ul li a:link,
+      nav ul li a:active,
+      nav ul li a:visited {
+        display: inline-block;
+        font-weight: bold;
+        color: #ffd8d1;
+        padding: 10px 20px 14px 20px;
+        text-decoration: none;
+        transition: all .15s ease-in; }
+      nav ul li a:hover {
+        color: white;
+        background: rgba(0, 0, 0, 0.2); }
+      nav ul li a.play {
+        text-shadow: 0px 0px 10px #000; }
+
+main {
+  float: left;
+  width: 100%;
+  margin-top: 80px; }
+  main #main_wrapper {
+    margin: auto;
+    background: rgba(0, 0, 0, 0.9);
+    overflow: auto; }
+  main #content {
+    float: left;
+    width: calc(100% - 20px);
+    padding: 10px; }
+    main #content .news_topic {
+      margin-top: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 5px; }
+      main #content .news_topic h2 {
+        font-size: 1em;
+        width: calc(100%);
+        padding: 5px;
+        margin: -5px -5px 0px -5px;
+        background: #ff6447;
+        color: black; }
+      main #content .news_topic h3 {
+        font-size: .9em;
+        font-weight: 100;
+        margin-top: 0;
+        padding: 5px 5px;
+        margin: 0px -5px 5px -5px;
+        background: rgba(255, 255, 255, 0.1); }
+      main #content .news_topic p {
+        font-weight: bold; }
+        main #content .news_topic p a:link,
+        main #content .news_topic p a:active,
+        main #content .news_topic p a:visited {
+          color: #cbcbcb; }
+        main #content .news_topic p a:hover {
+          color: #fefefe; }
+      main #content .news_topic .admin {
+        color: #eee055; }
+  main h1 {
+    display: block;
+    text-align: center;
+    width: 100%; }
+
+footer {
+  float: left;
+  width: 100%;
+  margin-top: 150px;
+  min-height: 250px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #a5a5a5;
+  text-align: center; }
+  footer #footer_wrapper {
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center; }
+    footer #footer_wrapper a:link,
+    footer #footer_wrapper a:active,
+    footer #footer_wrapper a:visited {
+      color: #ff6447; }
+    footer #footer_wrapper a:hover {
+      color: #ff421e; }
+
+/*# sourceMappingURL=desktop.css.map */

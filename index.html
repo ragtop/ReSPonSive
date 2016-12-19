@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReSPonSive</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="top_tint">
+            <div id="top_navigation_wrapper">
+                <div id="top_left" class="desktop">
+                    There are currently 0 players online
+                </div>
+                <div id="top_right">
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li>or</li>
+                        <li><a href="#">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="header_tint">
+            <div class="bubble"> </div>
+            <div id="header_content">
+                <h1>ReSPonSive</h1>
+                A Responsive RSPS Website Template by Mr. March
+                <div id="game_status">
+                    Status: <span class="online">Online</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="desktop">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Forums</a></li>
+            <li><a class="play" href="#">Play</a></li>
+            <li><a href="#">HiScores</a></li>
+            <li><a href="#">Donate</a></li>
+        </ul>
+        <!-- Hamburger for MOBILE -->
+        <ul class="burger">
+            <!-- light-hambuger.png OR dark-hamburger.png -->
+            <li><a href="#" onclick="animateHamburger();" class="hamburger"><img src="images/light-hamburger.png"></a></li>
+        </ul>
+        <div class="dropdown_container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Forums</a></li>
+                <li><a href="#">HiScores</a></li>
+                <li><a href="#">Donate</a></li>
+            </ul>
+        </div>
+        <!-- END OF Hamburger for MOBILE -->
+    </nav>
+    <main>
+        <div id="main_wrapper">
+            <div id="content">
+                <h1>Recent News</h1>
+                <div class="news_topic">
+                    <h2>This is an Example News Feed Topic.</h2>
+                    <h3>December 18, 2016 by <span class="admin">Administrator</span></h3>
+                    Spicy jalapeno bacon ipsum dolor amet capicola cow chicken cupim sausage ball tip meatball short loin landjaeger andouille shoulder pork loin filet mignon t-bone. Jowl landjaeger picanha kevin. Swine drumstick tenderloin rump, ham hock pork chop boudin kielbasa cow pastrami landjaeger doner picanha. Cupim biltong rump turducken, t-bone beef meatball strip steak doner pork ham hock tenderloin fatback short loin picanha. Pastrami doner andouille, filet mignon short ribs spare ribs pig tenderloin porchetta jowl salami capicola turducken landjaeger. Corned beef ham hock cupim, pancetta alcatra landjaeger filet mignon beef flank shankle. Brisket alcatra shank, prosciutto tail chuck flank pork chop fatback.
+                    <p>
+                        <a href="#">Read Full Article...</a>
+                    </p>
+                </div>
+                <div class="news_topic">
+                    <h2>This is an Example News Feed Topic.</h2>
+                    <h3>December 17, 2016 by <span class="admin">Administrator</span></h3>
+                    Spicy jalapeno bacon ipsum dolor amet drumstick jerky pork ground round burgdoggen pork loin shoulder frankfurter. Corned beef bresaola turkey, ribeye spare ribs pork chop hamburger pancetta tail meatloaf shank ball tip pig short ribs. Rump ham bresaola t-bone drumstick tenderloin ground round burgdoggen beef ribs. Flank boudin turkey pig doner capicola pastrami. Beef meatloaf ham meatball. Corned beef capicola salami, meatball spare ribs short loin sausage short ribs. Beef ribs burgdoggen hamburger shank leberkas tongue kevin picanha andouille doner flank kielbasa tri-tip.
+                    <p>
+                        <a href="#">Read Full Article...</a>
+                    </p>
+                </div>
+                <div class="news_topic">
+                    <h2>This is an Example News Feed Topic.</h2>
+                    <h3>December 17, 2016 by <span class="admin">Administrator</span></h3>
+                    Spicy jalapeno bacon ipsum dolor amet sirloin turducken rump alcatra, short loin t-bone pancetta filet mignon. Filet mignon chicken salami tongue ribeye pork belly sausage doner ham hock kielbasa ball tip alcatra. Landjaeger burgdoggen beef chicken, brisket bacon doner pancetta pig boudin kevin kielbasa. Landjaeger ham pancetta, salami cupim t-bone shankle beef meatloaf.
+                    <p>
+                        <a href="#">Read Full Article...</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer_wrapper">
+            Your footer stuff can go here.
+            <p>
+                Site design by <a href="#">Mr. March</a>.
+            </p>
+        </div>
+    </footer>
+    <script src="scripts/bubbles.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+</html>

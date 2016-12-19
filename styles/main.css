@@ -1,0 +1,332 @@
+/**
+*   Version: 1.0.0
+*   A responsive runescape private server website template.
+*
+*   This was originally posted on Rune-Server by Mr. March
+*
+*   Author: Mr. March
+*   Date:   18 December 2016
+*/
+/**
+*   Version: 1.0.0
+*   A responsive runescape private server website template.
+*
+*   This was originally posted on Rune-Server by Mr. March
+*
+*   Author: Mr. March
+*   Date:   18 December 2016
+*/
+/**
+*   Version: 1.0.0
+*   A responsive runescape private server website template.
+*
+*   This was originally posted on Rune-Server by Mr. March
+*
+*   Author: Mr. March
+*   Date:   18 December 2016
+*/
+/**
+*   Version: 1.0.0
+*   A responsive runescape private server website template.
+*
+*   This was originally posted on Rune-Server by Mr. March
+*
+*   Author: Mr. March
+*   Date:   18 December 2016
+*/
+/* background color of the website */
+/* the main theme color */
+/* the width everything should be centered at */
+/* easily change the font theme here */
+/* font-color for the entire site */
+/* font-color on the navigation section */
+/* font-color when you hover over a navigation link */
+/* automatically adjusts based on the main color */
+/* automatically adjusts based on the main color */
+/* the image displayed at the top of the page */
+body {
+  font: 0.8em verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  color: #cbcbcb; }
+
+.container, header #top_navigation_wrapper, header #header_content, main #main_wrapper, footer #footer_wrapper {
+  width: 80%;
+  max-width: 900px; }
+
+.mobile {
+  display: none; }
+
+header {
+  float: left;
+  width: 100%;
+  background: url("../images/header-bg.jpg") no-repeat fixed;
+  background-size: 100%;
+  min-height: 400px; }
+  header #top_tint {
+    float: left;
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid black;
+    width: 100%; }
+  header #top_navigation_wrapper {
+    width: 90%;
+    margin: auto;
+    height: 30px; }
+  header #top_left, header #top_right {
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  header #top_right {
+    float: right; }
+    header #top_right ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      header #top_right ul li {
+        display: inline-block; }
+        header #top_right ul li a:link,
+        header #top_right ul li a:active,
+        header #top_right ul li a:visited {
+          color: #ff6559;
+          text-decoration: underline; }
+        header #top_right ul li a:hover {
+          color: #ff3f30; }
+  header #header_tint {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 363px;
+    /* compensate for the top */
+    background: rgba(0, 0, 0, 0.65); }
+  header #header_content {
+    margin: auto;
+    text-align: center;
+    color: #ececec; }
+    header #header_content h1 {
+      font-size: 3.4em;
+      margin-top: 80px;
+      color: #ff6559;
+      text-shadow: 2px 2px 15px #000;
+      margin-bottom: 13px; }
+    header #header_content #game_status {
+      display: table;
+      margin: 50px auto;
+      padding: 12px 25px;
+      border-radius: 80px;
+      background-color: rgba(0, 0, 0, 0.9);
+      color: #cbcbcb; }
+      header #header_content #game_status .online {
+        color: #4ec854; }
+      header #header_content #game_status .offline {
+        color: #ff5945; }
+      header #header_content #game_status .updating {
+        color: #ced921; }
+  header .bubble {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #ff6559;
+    opacity: .1; }
+
+nav {
+  float: left;
+  width: 100%;
+  min-height: 40px;
+  background: #ff6559;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  text-align: center;
+  -webkit-transition: all .15s ease-in;
+  -moz-transition: all .15s ease-in;
+  -ms-transition: all .15s ease-in;
+  -o-transition: all .15s ease-in;
+  transition: all .15s ease-in; }
+  nav ul.burger {
+    display: none; }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    nav ul li {
+      display: inline-block; }
+      nav ul li a:link,
+      nav ul li a:active,
+      nav ul li a:visited {
+        display: inline-block;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.8);
+        padding: 10px 20px 14px 20px;
+        text-decoration: none;
+        -webkit-transition: all .15s ease-in;
+        -moz-transition: all .15s ease-in;
+        -ms-transition: all .15s ease-in;
+        -o-transition: all .15s ease-in;
+        transition: all .15s ease-in; }
+      nav ul li a:hover {
+        color: rgba(255, 255, 255, 0.9);
+        background: rgba(0, 0, 0, 0.2); }
+      nav ul li a.play {
+        text-shadow: 0px 0px 10px #000; }
+  nav .dropdown_container {
+    visibility: hidden;
+    height: 0; }
+    nav .dropdown_container ul {
+      display: none; }
+
+main {
+  float: left;
+  width: 100%;
+  margin-top: 80px; }
+  main #main_wrapper {
+    margin: auto;
+    background: rgba(0, 0, 0, 0.9);
+    overflow: auto; }
+  main #content {
+    float: left;
+    width: calc(100% - 20px);
+    padding: 10px; }
+    main #content .news_topic {
+      margin-top: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 5px; }
+      main #content .news_topic h2 {
+        font-size: 1em;
+        width: calc(100%);
+        padding: 5px;
+        margin: -5px -5px 0px -5px;
+        background: #ff6559;
+        color: black; }
+      main #content .news_topic h3 {
+        font-size: .9em;
+        font-weight: 100;
+        margin-top: 0;
+        padding: 5px 5px;
+        margin: 0px -5px 5px -5px;
+        background: rgba(255, 255, 255, 0.1); }
+      main #content .news_topic p {
+        font-weight: bold; }
+        main #content .news_topic p a:link,
+        main #content .news_topic p a:active,
+        main #content .news_topic p a:visited {
+          color: #cbcbcb; }
+        main #content .news_topic p a:hover {
+          color: #fefefe; }
+      main #content .news_topic .admin {
+        color: #eee055; }
+  main h1 {
+    display: block;
+    text-align: center;
+    width: 100%; }
+
+footer {
+  float: left;
+  width: 100%;
+  margin-top: 150px;
+  min-height: 250px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #a5a5a5;
+  text-align: center; }
+  footer #footer_wrapper {
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center; }
+    footer #footer_wrapper a:link,
+    footer #footer_wrapper a:active,
+    footer #footer_wrapper a:visited {
+      color: #ff6559; }
+    footer #footer_wrapper a:hover {
+      color: #ff3f30; }
+
+@media screen and (max-width: 1000px) {
+  header {
+    background-size: 100% 50%; } }
+@media screen and (max-width: 800px) {
+  .container, header #top_navigation_wrapper, header #header_content, main #main_wrapper, footer #footer_wrapper {
+    width: 90%; }
+
+  .mobile {
+    display: block; }
+
+  .desktop {
+    display: none; }
+
+  header #top_navigation_wrapper {
+    padding-bottom: 10px; }
+  header #top_right {
+    float: none;
+    width: 100%;
+    text-align: center; }
+  header #header_content h1 {
+    font-size: 2.6em; }
+  header .bubble {
+    display: none; }
+
+  nav ul.burger {
+    display: block; }
+    nav ul.burger li {
+      display: block; }
+      nav ul.burger li a:link,
+      nav ul.burger li a:active,
+      nav ul.burger li a:visited {
+        display: block;
+        padding: 10px 20px 8px 20px; }
+  nav a.hamburger:link, nav a.hamburger_active:link,
+  nav a.hamburger:active,
+  nav a.hamburger_active:active,
+  nav a.hamburger:visited,
+  nav a.hamburger_active:visited {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    opacity: .8; }
+    nav a.hamburger:link img, nav a.hamburger_active:link img,
+    nav a.hamburger:active img,
+    nav a.hamburger_active:active img,
+    nav a.hamburger:visited img,
+    nav a.hamburger_active:visited img {
+      height: 2.5em;
+      width: 3em;
+      -webkit-transition: all .25s ease-in;
+      -moz-transition: all .25s ease-in;
+      -ms-transition: all .25s ease-in;
+      -o-transition: all .25s ease-in;
+      transition: all .25s ease-in; }
+  nav a.hamburger_active img {
+    transform: rotate(90deg); }
+  nav .dropdown_container {
+    visibility: hidden;
+    width: 100%;
+    height: 0;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -ms-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    transition: all .5s ease-in; }
+    nav .dropdown_container ul {
+      display: block;
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      nav .dropdown_container ul li:last-child {
+        border-bottom: 0; }
+      nav .dropdown_container ul li:first-child {
+        border-top: 1px solid rgba(0, 0, 0, 0.2); }
+      nav .dropdown_container ul li {
+        display: block;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+        nav .dropdown_container ul li a:link,
+        nav .dropdown_container ul li a:active,
+        nav .dropdown_container ul li a:visited {
+          display: block;
+          text-align: center;
+          font-weight: bold;
+          padding: 14px 0 14px 0;
+          color: rgba(255, 255, 255, 0.8);
+          text-decoration: none; }
+        nav .dropdown_container ul li a:hover {
+          color: rgba(255, 255, 255, 0.9); } }
+
+/*# sourceMappingURL=main.css.map */
