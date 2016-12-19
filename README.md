@@ -141,3 +141,21 @@ Render your server updating or in development:
     Status: <span class="updating">Updating</span>
 </div>
 ```
+
+#Partials and Plugins
+ReSPonSive is a great tool that allows you to easily make changes to your template.  With Partials and Plugins
+if you want to add styling to your page, for example a "Hiscores" page styling, adding the design to your page is simple.
+
+Go into the ```styles/partials``` or ```styles/plugins``` directory and start searching for styling that you wish to add
+to your site.
+
+To add the styling you would simply add the following import to your ```main.scss``` file.
+
+In this example we are adding the Hiscore styling to our website.
+```SCSS
+/* PARTIALS */
+@import "partials/hiscores";
+```
+
+It's that easy.  Then adding the Hiscore's styling to your website will be as easy as adding a class name
+to an HTML element.
