@@ -277,7 +277,7 @@ footer {
 /* the image displayed at the top of the page */
 @media screen and (max-width: 1000px) {
   header {
-    background-size: 100% 50%; } }
+    background-size: 100% 100%; } }
 /**
     Allows for mobile resizing; any page that wants to be responsive in mobile view should import this partial.
 
