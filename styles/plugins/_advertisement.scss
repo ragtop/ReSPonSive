@@ -1,0 +1,26 @@
+/**
+    PLUGIN: Advertisement
+
+    Right now there is only support for long-advertisements.
+
+    Version: 1.0
+
+    Author: Marcello Sabino
+    Date:   December 19, 2016
+*/
+@import "../configs";
+
+div.long_advertisement {
+    margin: 80px auto 80px auto;
+    max-width: 728px;
+    height: 90px;
+}
+
+/* mobile advertisement sizing */
+@media screen and (max-width: $mobile) {
+
+    div.long_advertisement {
+        max-width: 320px;
+        height: 100px;
+    }
+}
