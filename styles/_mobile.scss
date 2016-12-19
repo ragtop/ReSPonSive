@@ -4,12 +4,12 @@
     Author: Marcello Sabino
     Date:   19 December 2016
 */
-$container-width: 90%;
+@import "configs";
 
 @media screen and (max-width: 800px) {
 
     .container {
-        width: $container-width;
+        width: $mobile-container-width;
     }
 
     .mobile {
