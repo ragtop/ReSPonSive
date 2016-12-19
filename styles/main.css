@@ -370,6 +370,21 @@ footer {
           color: rgba(255, 255, 255, 0.8);
           text-decoration: none; }
         nav .dropdown_container ul li a:hover {
-          color: rgba(255, 255, 255, 0.9); } }
+          color: rgba(255, 255, 255, 0.9); }
+
+  main #left_content {
+    float: left;
+    width: 100%;
+    text-align: center; }
+    main #left_content h4 {
+      font-size: 2em;
+      text-align: center;
+      margin: 15px 0; }
+    main #left_content ul.hiscore_links li {
+      display: inline-block;
+      margin: 4px 4px; }
+  main #right_content {
+    float: left;
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */

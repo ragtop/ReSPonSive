@@ -139,4 +139,32 @@ $container-width: 90%;
             }
         }
     }
+
+    main {
+
+        #left_content {
+            float: left;
+            width: 100%;
+            text-align: center;
+
+            h4 {
+                font-size: 2em;
+                text-align: center;
+                margin: 15px 0;
+            }
+
+            ul.hiscore_links {
+
+                li {
+                    display: inline-block;
+                    margin: 4px 4px;
+                }
+            }
+        }
+
+        #right_content {
+            float: left;
+            width: 100%;
+        }
+    }
 }
