@@ -12,7 +12,7 @@ It is not recommended to edit the .CSS files, this project utilizes .SCSS files.
 
 ##Customizing the Template for Your Needs
 ReSPonSive is very easy to customize to fit your needs. For basic visual changes, you'll only ever need to look at one file: 
-> desktop.scss
+> _configs.scss
 
 Once you open it at the top of the file you will see some variables that will need to be tweaked (if you so choose).
 
@@ -32,7 +32,7 @@ $darker-theme-color: darken($theme-color, 8%);      /* automatically adjusts bas
 $header-picture: "../images/header-bg.jpg";     /* the image displayed at the top of the page */
 ```
 
-Incase that documentation doesn't make sense, let's dive into this a little further.
+In case that documentation doesn't make sense, let's dive into this a little further.
 
 ##Core Variables
 The variables are in sets of groups, these groups are done on purpose to help find variables. Especially when more get added for further customization.  The first group of three (the following):
