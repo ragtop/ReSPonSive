@@ -1,0 +1,27 @@
+/**
+    PLUGIN: Beautiful Foot
+
+    Make the footer beautifully useful by adding a left and a right portion of the footer.
+
+    Version: 1.0
+
+    Author: Kyle Smith (ragtop)
+    Date:   December 20, 2016
+*/
+@import "../configs";
+
+footer {
+
+    #left_footer {
+        float: left;
+        width: calc(50% - 10px);
+        padding-right: 10px;
+        text-align: left;
+    }
+
+    #right_footer {
+        float: right;
+        width: calc(50% - 10px);
+        text-align: right;
+    }
+}
